@@ -3,7 +3,7 @@
 
 Deploying a [Redmine](https://hub.docker.com/_/redmine/) Docker Image with Ansible
 
-Demo app: [ops.net.ru](https://ops.net.ru/)
+Demo app: [ttalki.ru](https://ttalki.ru/)
 
 ### Setup
 
