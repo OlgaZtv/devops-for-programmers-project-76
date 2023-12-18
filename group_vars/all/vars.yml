@@ -1,0 +1,19 @@
+datadog_api_key: "{{ my_datadog_api_key }}"
+datadog_site: "datadoghq.eu"
+datadog_checks:
+  process:
+    init_config:
+    instances:
+      - name: ssh
+        search_string: ['ssh', 'sshd']
+      - name: syslog
+        search_string: ['rsyslog']
+        cpu_check_interval: 0.2
+        exact_match: true
+        ignore_denied_access: true
+      - name: http_check
+        exact_match: false
+        search_string: ['http_check', 'http_check.d']
+        url: "http://0.0.0.0"
+        method: get
+        http_response_status_code: 200

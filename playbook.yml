@@ -1,0 +1,24 @@
+- hosts: all
+  become: true
+  roles:
+    - { role: datadog.datadog, become: true }
+  tasks:
+    - name: Install Docker
+      ansible.builtin.include_tasks:
+        file: ./roles/tasks/install_docker.yml
+
+    - name: Create .env file
+      ansible.builtin.template:
+        src: .env.j2
+        dest: /.env
+
+    - name: Run Redmine
+      become: true
+      community.docker.docker_container:
+        image: redmine:5.0.4-alpine
+        name: redmine
+        state: started
+        auto_remove: true
+        env_file: /.env
+        ports:
+          - "8080:3000"

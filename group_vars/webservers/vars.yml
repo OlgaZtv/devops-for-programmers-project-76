@@ -1,0 +1,4 @@
+redmine_db_name: db
+redmine_db_host: c9qsj5m4bofaj7g3s60a.mdb.yandexcloud.net
+redmine_db_port: 6432
+redmine_db_user: api
