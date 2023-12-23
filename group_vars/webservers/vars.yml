@@ -1,4 +1,10 @@
-redmine_db_name: db
-redmine_db_host: c9qsj5m4bofaj7g3s60a.mdb.yandexcloud.net
-redmine_db_port: 6432
-redmine_db_user: api
+datadog_api_key: "{{ vault_datadog_api_key }}"
+datadog_site: datadoghq.eu
+datadog_checks:
+  http_check:
+    init_config:
+    instances:
+      - name: check redmine
+        url: "http://localhost:{{ app_port }}"
+        timeout: 10
+        method: GET

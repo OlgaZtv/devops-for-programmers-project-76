@@ -5,3 +5,5 @@ group_vars/all/vault.yml
 .vault-secret
 ddagent-install.log
 docker-compose.yml
+playbook_1.yml
+redmine_nginx.conf.j2
