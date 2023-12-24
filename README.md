@@ -12,7 +12,8 @@ OS: Linux
 ### Setup
 
 ### How to run:
-1. Create own `.vault-secret` file with password. For encrypting and decrypting you can use `make encrypt` and `make decrypt`
+1. Create own `.vault-secret` file with password. For encrypting and decrypting you can use `make ansible-encrypt-env` and `make ansible-decrypt-env`
+
 2. Install Ansible roles and collections:
    ```shell
    make install
