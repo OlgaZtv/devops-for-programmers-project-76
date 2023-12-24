@@ -5,6 +5,10 @@ Deploying a [Redmine](https://hub.docker.com/_/redmine/) Docker Image with Ansib
 
 Demo app: [ttalki.ru](http://ttalki.ru/)
 
+### Requirements:
+OS: Linux
+</br>Installed tools: Make 4.2.1, Ansible 2.13.13
+
 ### Setup
 
 ### How to run:

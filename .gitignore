@@ -1,6 +1,5 @@
 .idea
 group_vars/webservers/vault.yml
-group_vars/all/vault.yml
 .ansible-password
 .vault-secret
 ddagent-install.log
