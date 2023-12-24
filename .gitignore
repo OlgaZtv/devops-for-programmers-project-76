@@ -1,6 +1,4 @@
 .idea
-group_vars/webservers/vault.yml
-.ansible-password
 .vault-secret
 ddagent-install.log
 docker-compose.yml
